@@ -7,20 +7,64 @@
 
   <h1>Lesson 1: Creating a new meteor-mogul app</h1>
 
-<p>If you haven't already, install <a href="http://www.meteor.com/">Meteor</a> and <a href="https://git-scm.com/">git</a>. You'll also need a programming editor (I recommend <a href="https://atom.io/">Atom</a>). Optionally, you might want to install <a href="https://desktop.github.com/">GitHub Desktop</a>, which makes it easier to manage source code on GitHub.</p>
+<p>In this lesson you will</p>
 
-<p>All meteor-mogul apps are on <a href="https://github.com/meteor-mogul">GitHub</a>. Start by using git to clone the <a href="https://github.com/meteor-mogul/mogul-tutorial">meteor-mogul tutorial</a>. This creates your own local copy of the master branch of the tutorial repo.</p>
+<ol>
+  <li>create your first meteor-mogul app</li>
+  <li>practice using git to download and manage source code</li>
+  <li>run your first meteor-mogul app</li>
+  <li>fork a GitHub project so you can maintain your own repo</li>
+</ol>
 
-<p>To practice creating and running a meteor-mogul app, open your terminal and type:</p>
+<h2>Preliminaries</h2>
 
-<code>$ git clone https://github.com/meteor-mogul/mogul-tutorial.git</code>
+<p>If you haven't already, install <a href="http://www.meteor.com/">Meteor</a> and <a href="https://git-scm.com/">git</a>. You'll also need a programming editor (I recommend <a href="https://atom.io/">Atom</a>). Optionally, you might want to install <a href="https://desktop.github.com/">GitHub Desktop</a>, which makes it easier to manage source code on GitHub. Finally, you'll also need to set up a <a href="https://github.com/">GitHub</a> account for yourself.</p>
 
-<p>Note that any code line that starts with a <code>$</code> means a command you type in your terminal.</p>
+<h2>Getting meteor-mogul Apps</h2>
 
-<p>To run the mogul-tutorial app, do the following in your terminal:</p>
+<p>All meteor-mogul apps are on <a href="https://github.com/meteor-mogul">GitHub</a>. Start by using git to clone the <a href="https://github.com/meteor-mogul/mogul-tutorial">meteor-mogul tutorial</a>.</p>
+
+<p>This creates your own local copy of the master branch of the tutorial repo.</p>
 
 <code>
+  $ git clone https://github.com/meteor-mogul/mogul-tutorial.git<br />
   $ cd mogul-tutorial<br />
+</code>
+
+<p>Note two things:</p>
+
+<ol>
+  <li>any code line that starts with a <code>$</code> means a command you type in your terminal</li>
+  <li>all the following terminal commands assume you are executing them from the mogul-tutorial directory</li>
+</ol>
+
+<h2>Checkout the Branch for this Lesson</h2>
+
+<p>As you work your way through this tutorial, you'll be changing the code in the mogul-tutorial app.</p>
+
+<p>A git repo contains not just one version of code, but many versions.  Sets of changes in code are called branches.  By default, when you clone a repo with git, you get the <code>master</code> branch.  That is usually the branch that a project is ready to share with the public.</p>
+
+<p>For this tutorial, for each lesson we've created a branch in our mogul-tutorial repo.</p>
+
+<p>To get just the code that should be in the app at this point, checkout the <code>lesson01</code> branch.</p>
+
+<code>
+  $ git checkout lesson01
+</code>
+
+<p>To go back to the master branch:</p>
+
+<code>
+  $ git checkout master
+</code>
+
+<p>Can you see what's different between the two branches?  You can practice going back and forth between the two branches (if you have GitHub Desktop installed, try figuring out how to use it to switch between branches, too). Make sure you end up with the <code>lesson01</code> branch checked out before you proceed.</p>
+
+<h2>Running meteor-mogul Apps</h2>
+
+<p>To run the mogul-tutorial app, first make sure you've got a <code>lesson</code> branch checked out (unlike most other meteor-mogul apps, this tutorial's <code>master</code> branch is not intended to run as an app). Then do the following in your terminal:</p>
+
+<code>
   $ meteor npm install<br />
   $ meteor
 </code>
