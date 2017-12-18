@@ -4,11 +4,9 @@ Welcome to the meteor-mogul tutorial.
 
 In this tutorial, you create a simple app to manage a 'to do' list and collaborate with others on those tasks. By the end, you should have a basic understanding of meteor-mogul.
 
-## Getting Started
+## Getting Started (Preliminaries)
 
-Here are the preliminary steps to getting started with this tutorial.
-
-Install the following:
+If you haven't already, install the following:
 
  - [Meteor](http://www.meteor.com/)
  - [git](https://git-scm.com/)
