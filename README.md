@@ -28,9 +28,9 @@ By doing this tutorial, you'll not only learn how to use meteor, but you'll also
 
 ## Getting Started
 
-The master branch is the starting point.  Each lesson is a separate branch.
+If you have not yet installed `meteor`, see the Getting Started section of the [meteor-mogul tutorial](https://meteor-mogul.github.io/mogul-tutorial/).
 
-You can run it:
+Otherwise, you can dive right in to the tutorial by running it:
 
 ```
 $ git clone https://github.com/meteor-mogul/mogul-tutorial.git
