@@ -34,6 +34,7 @@ You can run it:
 
 ```
 $ git clone https://github.com/meteor-mogul/mogul-tutorial.git
+$ cd mogul-tutorial
 $ meteor npm install
 $ meteor
 ```
